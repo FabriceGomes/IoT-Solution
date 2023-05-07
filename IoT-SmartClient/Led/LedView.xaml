@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="IoT_SmartClient.LedView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IoT_SmartClient"
+             mc:Ignorable="d" Height="50" Width="50">
+    <Grid>
+        <Ellipse x:Name="ellipseLed" StrokeThickness="1" Stroke="#FFB9B9B9" >
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop x:Name="colorLedCenter" Color="#BFFF0000" Offset="0"/>
+                    <GradientStop x:Name="colorLedFace" Color="#FFAC0000" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</UserControl>
